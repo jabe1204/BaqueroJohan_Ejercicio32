@@ -1,12 +1,11 @@
-EvolveA.png : datos.dat graficador.py
-	python graficador.py
+onda.png : plot.py datos.dat
+	python plot.py
 
-datos.dat : ejercicio29.x
-	./ejercicio29.x
+datos.dat : ejercicio32.x
+	./ejercicio32.x
 
-ejercicio29.x : ejercicio29.cpp
-	c++ ejercicio29.cpp -o ejercicio29.x
-	
+ejercicio32.x : ejercicio32.cpp
+	c++ ejercicio32.cpp -o ejercicio32.x
 	
 clean:
-	rm ejercicio29.x datos.dat EvolveA.png
+	rm ejercicio32.x datos.dat onda.png
